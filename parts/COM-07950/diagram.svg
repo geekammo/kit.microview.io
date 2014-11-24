@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.2' baseProfile='tiny' x='0in' y='0in' width='0.439583in' height='0.439583in' viewBox='0 0 31.65 31.65' >
+<g partID='18763370'><g transform='translate(31.65,0)' ><g transform='matrix(2.22045e-16,1,-1,2.22045e-16,0,0)'  ><g transform="matrix(1, 0, 0, 1, -0.6, -0.2)">
+ <g  id="breadboard">
+  <g  gorn="0.3.0.0.0">
+   <path  stroke-opacity="1" fill="none" gorn="0.3.0.0.0.0" stroke="#231f20" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" id="path342" stroke-width="0.26307" d="m0.735957,16.0362c0,-8.66919,7.02783,-15.6946,15.6962,-15.6946,8.67,0,15.6962,7.02541,15.6962,15.6946,0,8.66919,-7.02622,15.6946,-15.6962,15.6946,-8.66839,0,-15.6962,-7.02541,-15.6962,-15.6946z"/>
+   <path  stroke-opacity="1" fill="none" gorn="0.3.0.0.0.1" stroke="#231f20" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" id="path350" stroke-width="0.26307" d="m13.3148,16.0362c0,-1.72206,1.39524,-3.1181,3.11729,-3.1181,1.72286,0,3.1181,1.39604,3.1181,3.1181,0,1.72286,-1.39524,3.1181,-3.1181,3.1181,-1.72206,0,-3.11729,-1.39524,-3.11729,-3.1181z"/>
+   <path  fill="#4f4c4d" gorn="0.3.0.0.0.2" stroke="none" style="fill-rule:nonzero;" fill-opacity="1" id="path354" d="m13.3148,25.0206c0,-1.72125,1.39524,-3.11649,3.11729,-3.11649,1.72286,0,3.1181,1.39524,3.1181,3.11649,0,1.72367,-1.39524,3.11891,-3.1181,3.11891,-1.72206,0,-3.11729,-1.39524,-3.11729,-3.11891"/>
+   <g transform="matrix(1, 0, 0, 1, 0.609867, 0.199536)">
+    <g >
+     <g >
+      <g >
+       <g  gorn="0.3.0.0.0.3.0.0.0" id="g6337">
+        <g transform="matrix(1.0087, 0, 0, -1.0087, 0.12609, 15.8366)">
+         <g >
+          <g >
+           <g >
+            <g  gorn="0.3.0.0.0.3.0.0.0.0.0.0.0" id="g336">
+             <path  fill="#4f4c4d" gorn="0.3.0.0.0.3.0.0.0.0.0.0.0.0" stroke="none" style="fill-rule:nonzero;" fill-opacity="1" id="path338" d="m0,0c0,8.5944,6.9672,15.5592,15.5608,15.5592,8.5952,0,15.5608,-6.9648,15.5608,-15.5592,0,-8.5944,-6.9656,-15.5592,-15.5608,-15.5592C6.9672,-15.5592,0,-8.5944,0,0"/>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g transform="matrix(1.0087, 0, 0, -1.0087, 13.3148, 16.0362)">
+    <g >
+     <g >
+      <g >
+       <g  gorn="0.3.0.0.0.4.0.0.0" id="g344">
+        <path  fill="#393536" gorn="0.3.0.0.0.4.0.0.0.0" stroke="none" style="fill-rule:nonzero;" fill-opacity="1" id="path346" d="M0,0C0,1.7072,1.3832,3.0912,3.0904,3.0912,4.7984,3.0912,6.1816,1.7072,6.1816,0,6.1816,-1.708,4.7984,-3.0912,3.0904,-3.0912,1.3832,-3.0912,0,-1.708,0,0"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g transform="matrix(1.0087, 0, 0, -1.0087, 13.3148, 24.2154)">
+    <g >
+     <g >
+      <g >
+       <g  gorn="0.3.0.0.0.5.0.0.0" id="g356">
+        <path  stroke-opacity="1" fill="none" gorn="0.3.0.0.0.5.0.0.0.0" stroke="#231f20" style="stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" id="path358" stroke-width="0.2608" d="M0,0C0,1.7064,1.3832,3.0896,3.0904,3.0896,4.7984,3.0896,6.1816,1.7064,6.1816,0,6.1816,-1.7088,4.7984,-3.092,3.0904,-3.092,1.3832,-3.092,0,-1.7088,0,0z"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g transform="matrix(1.0087, 0, 0, -1.0087, 16.1754, 24.4723)">
+    <g >
+     <g >
+      <g >
+       <g  gorn="0.3.0.0.0.6.0.0.0" id="g360">
+        <path  fill="#231f20" gorn="0.3.0.0.0.6.0.0.0.0" stroke="none" style="fill-rule:nonzero;" fill-opacity="1" id="path362" d="m0,0,-0.7856,0,0,0.5104,0.7856,0,0,0.7848,0.5096,0,0,-0.7848,0.7856,0,0,-0.5104,-0.7856,0,0,-0.7856L0,-0.7856,0,0z"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g transform="matrix(1, 0, 0, 1, 0.799667, 20.2234)">
+    <g >
+     <g >
+      <g >
+       <g  fill="#5a5a5a" gorn="0.3.0.0.0.7.0.0.0" fill-opacity="1" id="g10840">
+        <g transform="matrix(0.999995, 0, 0, 0.999995, -96.0332, -51.2372)">
+         <g >
+          <g >
+           <g >
+            <circle  fill="#5a5a5a" cx="111.72" gorn="0.3.0.0.0.7.0.0.0.0.0.0.0" cy="57.6" fill-opacity="1" r="1.1968" id="connector0pin"/>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="matrix(0.999995, 0, 0, 0.999995, -96.0332, -51.2372)">
+         <g >
+          <g >
+           <g >
+            <circle  fill="#5a5a5a" cx="111.72" gorn="0.3.0.0.0.7.0.0.0.1.0.0.0" cy="36" fill-opacity="1" r="1.1968" id="connector1pin"/>
+           </g>
+          </g>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</g>
+</g></g></g></svg>

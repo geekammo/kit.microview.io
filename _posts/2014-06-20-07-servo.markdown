@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "07 Servo"
+date:   2014-06-20 20:16:18
+categories: tutorial
+hype: 07-servo
+codebender: 36527
+parts:
+    - sku:	    ROB-09065
+      points:	N/A
+    - sku:      BLACK-JUMPER
+      points: B14 → Servo
+    - sku:      RED-JUMPER
+      points: I8 → Servo
+    - sku:      WHITE-JUMPER
+      points: I9 → Servo
+intro: |
+  Servos are ideal for embedded electronics applications because they do one thing very well that motors cannot – they can move to a position accurately. By varying the pulse width of the output voltage to a servo, you can move a servo to a specific position. For example, a pulse of 1.5 milliseconds will move the servo 90 degrees. In this circuit, you’ll learn how to use PWM (pulse width modulation) to control and rotate a servo. 
+
+code_to_note: |
+
+  `#include` is a special "preprocessor" command that inserts a library (or any other file) into your sketch. You can type this command yourself, or choose an installed library from the "sketch / import library" menu.
+
+      #include <Servo.h>
+
+  The servo library adds new commands that let you control a servo. To prepare the Arduino to control a servo, you must first create a Servo "object" for each servo (here we've named it "servo"), and then "attach" it to a digital pin (here we're using digital pin 6).
+
+      Servo servo;
+      servo.attach(6);
+
+  The servo in this kit doesn't spin all the way around, but they can be commanded to move to a specific position. We use the servo library's write() command to move a servo to a specified number of degrees(0 to 160). Remember that the servo requires time to move, so give it a short `delay()` if necessary.
+
+      servo.write(160);
+
+
+
+what_you_should_see: |
+  You should see your servo motor move to various locations at several speeds. If the motor doesn't move, check your connections and make sure you have verified and uploaded the code, or see the troubleshooting tips below.
+
+toubleshooting: |
+  **Servo Not Twisting**
+
+  Even with colored wires it is still shockingly easy to plug a servo in backward. This might be the case. 
+  
+  **Still Not Working**
+
+  A mistake we made a time or two was simply forgetting to connect the power (red and brown wires) to +5 volts and ground.
+
+  **Fits and Starts**
+  
+  If the servo begins moving then twitches, and there's a flashing light on your MicroView, the power supply you are using is not quite up to the challenge. Try using a USB adaptor that provides more current.
+
+---

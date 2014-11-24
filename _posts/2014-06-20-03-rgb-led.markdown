@@ -1,0 +1,86 @@
+---
+layout: post
+title:  "03 RGB LED"
+date:   2014-06-20 20:16:18
+categories: tutorial
+hype: 03-rgb-led
+codebender: 36523
+parts:
+    - sku:	    COM-00105
+      points:	J21 [Red], J22 [Cathode], J23 [Green], J24  [Blue]
+
+    - sku:      COM-08377
+      points: I17 → I21
+
+    - sku:      COM-08377
+      points: H18 → H23
+
+    - sku:      COM-08377
+      points: G19 → G24
+
+    - sku:      RED-JUMPER
+      points: I9 → J17
+
+    - sku:      GREEN-JUMPER
+      points: I10 → J18
+    
+    - sku:      BLUE-JUMPER
+      points: I11 → J19
+
+    - sku:      BLACK-JUMPER
+      points: A14 → X16
+
+    - sku:      BLACK-JUMPER
+      points: F22 → X24
+
+
+intro: |
+  You know what’s even more fun than a blinking LED? Changing colors with one LED. RGB, or red-green-blue, LEDs have three different color-emitting diodes that can be combined to create all sorts of colors. In this circuit, you’ll learn how to use an RGB LED to create unique color combinations. Depending on how bright each diode is, nearly any color is possible!
+
+
+code_to_note: |
+
+  A `for()` loop is used to step a number across a range, and repeatedly runs code within the brackets `{}` until a condition is met. 
+  We use `for` loops to change over time the intensity of our RGB pin's brightness. The variable "i" starts a 0, ends at 255, and increases by the amount of the variable `fadeStep`.
+
+      for (i=0;i<=255;i+=fadeStep) 
+      {}
+
+  The MicroView is very very fast, capable of running thousands of lines of code each second. To slow it down so that we can see what it's doing, we'll often insert delays into the code. `delay()` counts in milliseconds; there are 1000 ms in one second.
+
+      delay(dly);
+
+
+what_you_should_see: |
+  You should see your RGB LED go through a colorful sequence of various colors with the slider widget showing the value of each color channel's brightness.
+
+toubleshooting: |
+  **LED Remains Dark or Shows Incorrect Color**
+
+  With the four pins of the LED so close together, it’s sometimes easy to misplace one. Double check each pin is where it should be.
+  
+  **Seeing Red**
+
+  The red diode within the RGB LED may be a bit brighter than the other two. To make your colors more balanced, use a higher Ohm resistor. Or adjust in code.
+      
+      analogWrite(RED,i);
+
+  to
+      
+      analogWrite(RED,i/3);
+
+---
+
+## The shocking truth behind analogWrite():
+
+We've seen that the Arduino can read analog voltages (voltages between 0 and 5 volts) using the analogRead() function. Is there a way for the MicroView to output analog voltages as well?
+
+The answer is no... and yes. The MicroView does not have a true analog voltage output. But, because the MicroView is so fast, it can fake it using something called PWM ("Pulse-Width Modulation"). 
+
+Pins named 3, 5, and 6 within the Arduino code, map to the MicoView physical pins of 12, 13, and 14. Each of these pins are PWM/analogWrite out compatible.
+
+PWM varies the amount of time that a blinking pin spends HIGH vs. the time it spends LOW. If the pin spends most of its time HIGH, a LED connected to that pin will appear bright. If it spends most of its time LOW, the LED will look dim. Because the pin is blinking much faster than your eye can detect, the MicroView creates the illusion of a "true" analog output.
+
+<img src="/assets/analog_write.svg" style="width:100%" />
+
+

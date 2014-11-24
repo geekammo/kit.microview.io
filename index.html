@@ -1,0 +1,20 @@
+---
+layout: default
+title: MiroView Learning Kit Course
+---
+{% for post in site.posts reversed %}
+
+<article>
+	<a href="{{ post.url }}"><h2 class="title">{{ post.title }}</h2></a>
+	<div class="content">
+	<time>{{ post.date | date_to_string }}</time>
+	</div>
+</article>
+
+{% endfor %}
+
+<br>
+
+<!--<aside>
+	<a href="/posts" class="white item">More Posts</a>
+</aside>-->

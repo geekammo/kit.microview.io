@@ -1,0 +1,92 @@
+---
+layout: post
+title:  "10 Relays"
+date:   2014-06-20 20:16:18
+categories: tutorial
+hype: 11-relay
+codebender: 36530
+parts:
+    - sku:	    COM-08377
+      points:	  G12 → D12
+
+    - sku:      COM-08377
+      points:   C20 → W22
+      
+    - sku:      COM-08588
+      points:   F13 → D13
+
+    - sku:      COM-12852
+      points:   B11, B12, B13
+
+    - sku:      COM-00100
+      points:   F15, E15, F19, E20, and F21
+
+    - sku:      COM-09594
+      points:   C23 → C24
+
+    - sku:      COM-09590
+      points:   C26 → C27
+
+    - sku:      BLUE-JUMPER
+      points:   J13 → J15
+
+    - sku:      PURPLE-JUMPER
+      points:   J19 → E26
+
+    - sku:      BLACK-JUMPER
+      points:   A11 → X12
+
+    - sku:      RED-JUMPER
+      points:   Y31 → W31
+
+    - sku:      RED-JUMPER
+      points:   I5 → Y7
+
+    - sku:      RED-JUMPER
+      points:   I15 → Y17
+
+    - sku:      YELLOW-JUMPER
+      points:   J9 → J12
+
+    - sku:      YELLOW-JUMPER
+      points:   C13 → C15
+
+    - sku:      YELLOW-JUMPER
+      points:   I21 → E23
+
+    - sku:      YELLOW-JUMPER
+      points:   A24 → X28
+
+    - sku:      YELLOW-JUMPER
+      points:   A27 → X29
+
+intro: |
+  A relay is basically an electrically controlled mechanical switch. Inside that harmless looking plastic box is an electromagnet that, when it gets a jolt of energy, causes a switch to trip. In this circuit, you’ll learn how to control a relay like a pro – giving your MicroView even more powerful abilities!
+
+code_to_note: |
+
+  When we turn on the transistor, which in turn energizes the relay's coil, the relay's switch contacts are closed. This connects the relay's COM pin to the NO (Normally Open) pin. Whatever you've connected using these pins will turn on. (Here we're using LEDs, but this could be almost anything.)
+
+      digitalWrite(relayPin, HIGH);
+
+  The relay has an additional contact called NC (Normally Closed). The NC pin is connected to the COM pin when the relay is OFF. You can use either pin depending on whether something should be normally on or normally off. You can also use both pins to alternate power to two devices, much like railroad crossing warning lights.
+
+      digitalWrite(relayPin, LOW);
+  
+what_you_should_see: |
+  You should be able to hear the relay contacts click, and see the two LEDs alternate illuminating at 1-second intervals. If you don't, double-check that you have assembled the circuit correctly, and uploaded the correct sketch to the MicroView. Also, see the troubleshooting tips below.
+
+toubleshooting: |
+  **LEDs Not Lighting**
+
+  Double-check that you've plugged them in correctly. The longer lead (and non-flat edge of the plastic flange) is the positive lead.
+  
+  **No Clicking Sound**
+
+  The transistor or coil portion of the circuit isn't quite working. Check the transistor is plugged in the right way.
+
+  **Not Quite Working**
+  
+  The included relays are designed to be soldered rather than used in a breadboard. As such you may need to press it in to ensure it works (and it may pop out occasionally). When you’re building the circuit be careful not to mix up the temperature sensor and the transistor, they’re almost identical.
+
+---

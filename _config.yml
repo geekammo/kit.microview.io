@@ -1,0 +1,8 @@
+name: MicroView Learning Kit
+markdown: redcarpet
+highlighter: true
+disqus-id: microviewinteractivecourse
+exclude: [".rvmrc", "Gemfile" , "Gemfile.lock" , ".rbenv-version", "Rakefile", "changelog.md", "s3_website.yml", "_src"]
+
+twitter-username: geekammo
+url: http://kit.microview.io

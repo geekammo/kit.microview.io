@@ -1,0 +1,72 @@
+parts:
+
+  - COM-00100:
+      name:   Relay
+      url:    https://www.sparkfun.com/products/100
+  - ROB-11696:
+      name: Motor 
+      url:    https://www.sparkfun.com/products/12852
+  - COM-12852:
+      name: Transistor 
+      url:    https://www.sparkfun.com/products/12852
+  - COM-08588:
+      name: Diode 
+      url:    https://www.sparkfun.com/products/8588
+  - COM-07950:
+      name: Piezo
+      url:    https://www.sparkfun.com/products/7950
+  - ROB-09065:
+      name: Sevo
+      url:    https://www.sparkfun.com/products/11696
+  - SEN-09088:
+      name:   Photo Resistor
+      url:    https://www.sparkfun.com/products/9088
+  - SEN-10988:
+      name:   TMP36 Temperature Sensor
+      url:   http://www.sparkfun.com/products/10988
+  - SEN-08680: 
+      name:   Soft Potentiometer
+      url:    http://www.sparkfun.com/products/8680
+  - COM-09594:
+      name:   Yellow LED (5mm)
+      url:    https://www.sparkfun.com/products/9594    
+  - COM-09590:
+      name:   Red LED (5mm)
+      url:    https://www.sparkfun.com/products/9590  
+  - COM-09190:
+      name:   Push Button
+      url:    https://www.sparkfun.com/products/9190
+  - COM-08377:
+      name:   330Ω Resistor
+      url:    https://www.sparkfun.com/products/8377  
+  - COM-08374:
+      name:   10KΩ Resistor
+      url:    https://www.sparkfun.com/products/8374
+  - COM-09806:
+      name:   Potentiometer
+      url:    https://www.sparkfun.com/products/9806
+  - COM-00105:
+      name:   RGB LED
+      url:    https://www.sparkfun.com/products/105
+  - PURPLE-JUMPER:
+      name:   Purple Jumper
+      url:    https://www.sparkfun.com/products/8431
+  - RED-JUMPER:
+      name:   Red Jumper
+      url:    https://www.sparkfun.com/products/8431
+  - BLACK-JUMPER:
+      name:   Black Jumper
+      url:    https://www.sparkfun.com/products/8431
+  - YELLOW-JUMPER:
+      name:   Yellow Jumper
+      url:    https://www.sparkfun.com/products/8431
+  - GREEN-JUMPER:
+      name:   Green Jumper
+      url:    https://www.sparkfun.com/products/8431
+  - BLUE-JUMPER:
+      name:   Blue Jumper
+      url:    https://www.sparkfun.com/products/8431
+  - WHITE-JUMPER:
+      name:   White Jumper
+      url:    https://www.sparkfun.com/products/8431
+

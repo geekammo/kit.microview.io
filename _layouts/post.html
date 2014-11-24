@@ -1,0 +1,99 @@
+---
+layout: default
+---
+<article>
+  <a href="{{ post.url }}">
+    <h2 class="title">
+      {{ page.title }}
+    </h2>
+  </a>
+  <div class="content">
+      <h2>Introduction</h2>
+      {{ page.intro  | markdownify }}
+      <h2>Parts</h2>
+      <!--For this tutorial (in addition to your <a href="https://www.sparkfun.com/products/12923">MicroView</a> and <a href="https://www.sparkfun.com/products/12924">USB Programmer</a>) you will need:
+      {% parts_qtys %}-->
+      {% parts_table %}
+      <p>Checkout our <a href="/breadboard/">breadboard guide</a> and <a href="/pinout/">MicroView Pinout</a> for more information.</p>
+      <h2>Breadboard Setup</h2>
+      <iframe width="700" height="450" src="/hype/{{page.hype}}.html" frameborder="0" style="border:1px solid #fff"></iframe>
+      <h2>MicroView Arduino Code</h2>
+      <iframe style="height: 510px; width: 100%; margin: 10px 0 10px;" allowTransparency="true" src="https://codebender.cc/embed/sketch:{{page.codebender}}?board=MicroView" frameborder="0" id="codebenderiframe"></iframe>
+      <h2>What you should see</h2>
+      {{ page.what_you_should_see }}
+      {% if page.code_to_note && page.code_to_note != "" %}
+      <h3>Code to Note</h3>
+      {{ page.code_to_note  | markdownify }}
+      {% endif %}
+      <h2>Troubleshooting</h2>
+      {{ page.toubleshooting | markdownify }}
+      <p><strong>Still No Success?</strong></p>
+      <p>A broken circuit is no fun, send us an e-mail and we will get back to you as soon as we can: <a href="mailto:help@geekammo.com">help@geekammo.com</a></p>
+      {{content}}
+      
+      {%if page.next %}<div style="text-align:right; font-size:28px;">Continue on to circuit <a href="{{page.next.url}}">{{page.next.title}}</a>&nbsp;</div>{% endif %}
+    <hr>
+    <time>
+      <div>{{ page.date | date_to_string }}</div>
+    </time>
+  </div>
+</article>
+<aside>
+  <h2 class="title blu">
+    Share
+  </h2>
+  <div class="content white">
+    <a href="http://twitter.com/intent/tweet?text={{ page.title | escape }}&url={{ site.url }}{{ page.url | escape }}&via={{ site.twitter-username }}" class="twt">
+      Twitter
+    </a>
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url | escape }}" class="gplus">
+      Google+
+    </a>
+    <a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url | escape }}" class="fb">
+      Facebook
+    </a>
+  </div>
+  
+  <div class="white">
+    {% if site.disqus-id %}
+    <h2 class="title green">
+      Comments
+    </h2>
+    <div class="content">
+      <div id="disqus_thread">
+      </div>
+      <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = '{{ site.disqus-id }}';
+      // required: replace example with your forum shortname
+      
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>
+    Please enable JavaScript to view the 
+    <a href="http://disqus.com/?ref_noscript">
+      comments powered by Disqus.
+    </a>
+  </noscript>
+  <a href="http://disqus.com" class="dsq-brlink">
+    comments powered by 
+    <span class="logo-disqus">
+      Disqus
+    </span>
+  </a>
+  </div>
+  {% endif %}
+  </aside>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+$('#codebenderiframe').load( function() {
+    $('#codebenderiframe').contents().find("head")
+      .append($("<style type='text/css'>  #codeBender_embed_header{display:none;}  </style>"));
+});
+  </script>

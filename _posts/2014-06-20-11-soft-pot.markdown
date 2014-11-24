@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "11 Soft Potentiometer"
+date:   2014-06-20 20:16:18
+categories: tutorial
+hype: 08-soft-pot
+codebender: 36531
+parts:
+    - sku: SEN-08680
+      points:	
+
+    - sku: COM-08377
+      points: 
+    
+    - sku: COM-08377
+      points: 
+
+    - sku: RED-JUMPER
+      points: 
+
+    - sku: BLACK-JUMPER
+      points: 
+
+
+intro: |
+  In this circuit you’ll work with a potentiometer.
+  A potentiometer is also known as a variable resistor. When it’s connected with 5 volts across its two outer pins, the middle pin outputs a voltage between 0 and 5, depending on the position of the knob on the potentiometer. A potentiometer is a perfect demonstration of a variable voltage divider circuit. The voltage is divided proportionate to the resistance between the middle pin and the ground pin. In this circuit, you’ll learn how to use a potentiometer and display it's value on the MicroView.
+
+
+what_you_should_see: |
+  
+  As you move a blunt long object (like the one shown below) up and down the soft potentiometer, the MicroView Slider Widget should change it's value accordingly.
+
+  <br><img src="/assets/soft-pot.jpg" style="display: inline-block;"/><br>
+
+  If it isn't working, make sure you have assembled the circuit correctly and verified and uploaded the code to your MicroView, or see the troubleshooting tips below.
+
+  <strong>Warning:</strong>
+
+  Do not use your thumb or fingers to slide the softpot as you could short the circuit and potentially burn!
+
+toubleshooting: |
+  **Bizarre Results**
+
+  The most likely cause of this is if you’re pressing the potentiometer in more than one position. This is normal and can actually be used to create some neat results.  
+
+---
